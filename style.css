@@ -1,0 +1,110 @@
+:root {
+    --background: #f6f6f6;
+    --font: #222;
+    --border: #333;
+    --screen: #fbfaf4f1;
+    --calculator: rgb(196, 192, 184);
+    --btn: rgb(210, 230, 243);
+    --btn-active: rgb(147, 115, 175);
+    --btn-dlt: hsl(180, 3%, 29%);
+    --btn-clr: rgb(113, 107, 107);
+    --btn-eqls:rgb(232, 244, 244);
+
+   }
+  
+   header{
+    text-align: center;
+    font-size: x-large;
+    font: bolder;
+  }
+  
+   body {
+    margin: 0%;
+    background-color: var(--background);
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #equalsBtn{
+    background-color: var(--btn-eqls) ;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  .calculator {
+    width: 300px;
+    height: 530px;
+    border: 2px var(--border) solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--calculator);
+  }
+  
+  .screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 40px;
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .span-2 {
+    grid-column: span 2;
+  }
+  
+  .btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 25px;
+  }
+
+  .btn:active {
+    background-color: var(--btn-active);
+  }
+  
+  .btn-clear {
+    background-color: var(--btn-clr);
+  }
+
+  .btn-delete {
+    background-color: var(--btn-dlt);
+  }
